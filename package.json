@@ -1,0 +1,17 @@
+{
+  "name": "logic-ui",
+  "version": "1.0.0",
+  "description": "simulator de porti logice in web",
+  "main": "src/index.html",
+  "scripts": {
+    "test": "jest"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/preset-env": "^7.23.0",
+    "babel-jest": "^29.7.0",
+    "jest": "^29.7.0"
+  }
+}

@@ -4,7 +4,7 @@ import { Bulb } from "./nodes/bulb.js";
 import { Constant } from "./nodes/constant.js";
 
 // app's main graph
-class Circuit {
+export class Circuit {
     constructor() {
         this.nodes = [];
         this.edges = [];
@@ -38,13 +38,10 @@ class Circuit {
     }
 }
 
-function createTestCircuit() {
+export function createTestCircuit() {
     const circuit = new Circuit();
     circuit.addNode(1, 100, 100, new Constant(true));
-    circuit.addNode(2, 200, 100, new Bulb());
+    circuit.addNode(2, 600, 100, new Bulb());
     circuit.addEdge(1, 0, 2, 0);
     return circuit;
 }
-
-let circuit = createTestCircuit();
-console.log(circuit);
